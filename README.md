@@ -2,7 +2,8 @@
 
 Uma landing page moderna, responsiva e visualmente atrativa, criada com HTML e CSS puro. Ideal para quem quer aprender fundamentos de front-end ou criar páginas institucionais com estilo.
 
-![Preview do Projeto](https://codepen.io/KaiqueDantas14/pen/xbbExQG)
+Pode ser vista online pelo codepen:
+https://codepen.io/KaiqueDantas14/pen/xbbExQG
 
 ## ✨ Funcionalidades
 
