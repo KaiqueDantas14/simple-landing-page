@@ -1,0 +1,513 @@
+/* ESTILIZAÇÕES GERAIS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  padding: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.interface {
+  padding: 15px 4%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0; /* Gruda no topo */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+div.logo a{
+  text-decoration: none;
+  color: black;
+}
+
+div.logo h3{
+  cursor: pointer;
+}
+
+.interface > .flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+nav.menu-desktop ul{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav.menu-desktop ul li a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav.menu-desktop ul li a:hover{
+  color: #ff6600;
+  transition: 0.3s;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+main{
+  height: 100vh;
+  background-image: url(/HTML/Simple-lading-page/img/endless-constellation.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.main-content h2{
+  font-size: 75px;
+}
+
+.main-content p{
+  font-size: 22px;
+  padding-top: 55px;
+}
+
+.icons img{
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* TOP 3 */
+
+.section-whitebrackground{
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 150px ;
+  padding-bottom: 150px ;
+}
+
+.section-content .text-container .top-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-3 h3{
+  font-size: 50px;
+  margin: 0 0 40px;
+}
+
+.top-3 p{
+  font-size: 25px;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* GRID */
+.conteiner-grid{
+  height: 100vh;
+  background-image: url(/HTML/Simple-lading-page/img/endless-constellation.svg);
+  color: white;
+  padding: 150px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecalho-grid{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.conteiner-grid h3{
+  font-size: 40px;
+  margin: 0;
+}
+
+.conteiner-grid p{
+  font-size: large;
+  margin: 0;
+}
+
+.top-grid{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 10px;
+justify-content: center;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+/* Gallery */
+
+.gallery-section{
+  height: 100vh;
+  padding: 150px 40px;
+}
+
+.gallery{
+  padding-top: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1); /* Amplia a imagem em 10% */
+}
+
+.gallery-section h2{
+  font-size: 50px;
+}
+
+.gallery-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+/* PRICING AREA */
+.pricing-conteiner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+.preco-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.pricing-conteiner .preco-flex h3{
+  font-size: 50px;
+}
+
+.pricing-conteiner .preco-flex p{
+  width: 30%;
+  text-align: justify;
+  margin: 0 auto;
+}
+ 
+table{
+  width: 80%;
+  border-collapse: collapse ;
+  margin: 20px auto;
+}
+
+thead{
+  background-color: darkgray;
+}
+
+.especial-td{
+  padding: 20px;
+}
+
+td, th{
+  border: solid 2px black;
+  padding: 10px
+}
+
+tr:hover{
+  background-color: gray;
+}
+
+/* CONTACT FORM */
+.contact{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(/HTML/Simple-lading-page/img/endless-constellation.svg);
+  color: white;
+  gap: 20px
+}
+
+.contact-text{
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 50px;
+}
+.contact p{
+  width: 20%;
+}
+
+fieldset{
+  height: 50vh;
+  width: 50%;
+  border: none;
+}
+
+input{
+  width: 500px;
+  height: 50px;
+}
+
+.name-field{
+  margin: 10px 0;
+}
+
+.name-field::placeholder{
+  font-size: 20px;
+}
+
+.email-field{
+  width: 1005px;
+  margin: 10px 0;
+}
+
+.email-field::placeholder{
+  font-size: 20px;
+}
+
+.message-field{
+  width: 1005px;
+  height: 100px;
+  margin: 10px 0;
+}
+
+.message-button{
+  border: 5px solid white;
+  background: none;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.message-button:hover{
+  background-color: rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 1005px;;
+  height: 40px;
+  font-size: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="email"] {
+  width: 1005px;;
+  height: 40px;
+  font-size: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* Button up */
+
+.btn-conteiner{
+  display: flex;
+  justify-content: right;
+}
+
+.btn-up{
+  padding: 10px 20px;
+  background-color: #ffffff00;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+}
+
+.btn-up a img{
+  height: 50px;
+}
+
+/* MENU MOBILE*/
+.menu-mobile {
+  display: none;
+  position: relative;
+}
+
+.hamburguer {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1100;
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1001;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #eee;
+}
+
+
+/*Responsividade*/
+@media screen and (max-width: 1020px){
+  /* Cabeçalho */
+  .menu-desktop{
+    display: none;
+  }
+
+  /* Main Content */
+
+  .main-content h2{
+    margin: 2px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .main-content p{
+   font-size: 16px;
+   padding: 5px 0;
+   margin: 5px 0;
+  }
+
+  /* top 3 jobs */
+  .top-3 p{
+    padding: 0 10px;
+  }
+
+  /* grid */
+  .top-grid h3{
+    font-size: 20px;
+  }
+
+  .top-grid{
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .gallery-img{
+    min-width: 100%;
+    height: auto;
+    max-height: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Pricing area */
+  .pricing-conteiner{
+    height: 80% ;
+  }
+
+  section.preco-flex p{
+    display: none;
+  }
+
+  /* contact */
+  .contact {
+    width: 100%;
+  }
+
+  .name-field{
+    width: 300px;
+  }
+
+  /* FORM */
+  .email-field,
+  .message-field,
+  input[type="text"],
+  input[type="email"] {
+  width: 150em;
+  max-width: 300px;
+  }
+
+  /* Menu mobile */
+  .menu-mobile {
+    display: block;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .mobile-nav.active {
+    display: block;
+  }
+}

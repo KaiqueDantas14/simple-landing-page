@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simple-landing-page.css">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="flex">
+                <div class="logo" id="logo">
+                   <a href="#top"><h3>LOGO</h3></a>
+                </div> <!--Logo-->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#top-3">Top 3</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#recent">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav> <!--MENU-DESK-->
+
+                <div class="menu-mobile">
+                    <div class="hamburger" onclick="toggleMenu()">
+                        ☰
+                    </div>
+                    <nav id="mobileNav" class="mobile-nav">
+                        <ul>
+                            <li><a href="#intro">Intro</a></li>
+                            <li><a href="#top-3">Top 3</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#recent">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div><!--Flex-->    
+        </div> <!--Interface-->
+    </header> <!--Main Menu-->
+
+    <main class="topo-do-site" id="top">
+        <div class="interface">
+                <div class="main-content">
+                    <div class="texto">
+                        <h2>JANUARY <br> BRING US <br> FIREFOX 85</h2>
+                        <p>To wrap up January, we are proud to bring <br> you the release of Firefox 85. <br> In this version we are bringing you support for <br> the :focus-visible pseudo-class in CSS and <br> associated devtools, and the complete <br> removal of Flash support from Firefox.</p>
+                    </div>
+
+                    <div class="icons">
+                        <img src="/HTML/Simple-lading-page/img/undraw_static-assets_di5m.svg" alt="">
+                    </div>
+                </div>    
+        </div><!--Interface-->
+    </main> <!--main-->
+
+
+    <div id="intro" class="section-whitebrackground">
+        <div class="section-content">
+            <div class="text-container">
+                <article class="top-3">
+                    <h3>TOP 3 JOBS</h3>
+                    <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+                    <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+                    <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+                </article>
+            </div>    
+        </div>
+    </div>    
+
+    <div class="conteiner-grid" id="top-3">
+        <div class="top-grid-wrapper">
+                <h3>TOP 3 JOBS</h3>
+                <p>Here are some recent work</p>
+            <article class="top-grid">
+                <div>
+                    <h3><i>1</i> First</h3>
+                    <p>This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
+                </div>
+            
+                <div>
+                    <h3><i>2</i> Another site</h3>
+                    <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>               
+                </div>
+
+                <div>
+                    <h3><i>3</i> Third one</h3>
+                    <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                </div>    
+            </article>
+        </div>
+    </div>
+
+    <div class="gallery-flex">
+        <section class="gallery-section">
+            <h2>Gallery</h2>
+            <p>Here are some of my pics</p>
+            <div class="gallery" id="gallery">
+                <img class="gallery-img" src="" alt="Imagem 1">
+                <img class="gallery-img" src="" alt="Imagem 2">
+                <img class="gallery-img" src="" alt="Imagem 3">
+                <img class="gallery-img" src="" alt="Imagem 4">
+                <img class="gallery-img" src="" alt="Imagem 5">
+                <img class="gallery-img" src="" alt="Imagem 6">
+            </div>
+        </section>
+    </div>
+
+    <script src="/HTML/Simple-lading-page/simple-landing-page.js"></script>
+
+    <div class="conteiner-grid" id="recent">
+        <div class="top-grid-wrapper">
+            <h3>Recent jobs</h3>
+            <br>
+            <article class="top-grid">
+                <div>
+                    <h3><i>1</i> A good one</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas rem accusantium modi cumque voluptate, omnis quo consectetur dolores quisquam unde sunt cum, delectus quod sapiente, blanditiis ratione. Beatae, velit suscipit!</p>
+                </div>
+            
+                <div>
+                    <h3><i>2</i> Great job</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur error quidem accusamus totam esse itaque officia ipsa, similique ex reiciendis. Corrupti in earum explicabo quod ut rem sunt ab molestiae?</p>
+                </div>
+
+                <div>
+                    <h3><i>3</i> Third one</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque deleniti alias cumque rerum, autem quod odio, mollitia atque molestiae sequi accusamus, laudantium delectus expedita sed ut similique saepe a nemo.s</p>
+                </div>    
+            </article>
+        </div>
+    </div>
+
+    <div class="pricing-conteiner">
+        <section class="preco-flex">
+                <h3>PRICING</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, sit distinctio est hic quas minima? Quasi similique aliquam dolorum laborum error, sint earum non molestiae quam reiciendis, natus, perspiciatis veniam.</p>
+            <table>
+                <thead>
+                    <th>Title 1</th>
+                    <th>Title 2</th>
+                    <th>Title 3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                    </tr>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                    </tr>
+                    <tr>
+                        <td>Content 1</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                    </tr>
+                    <tr>
+                        <td class="especial-td">SPAN DOWN</td>
+                        <td>Content 2</td>
+                        <td>Content 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer</td>
+                    </tr>
+                </tfoot>
+                </table>
+        </section>
+    </div>
+
+    <div class="contact" id="contact">
+            <h2>CONTACT US</h2>
+        <form>
+            <fieldset>
+                <p>Nome completo</p>
+                <input type="text" name="name" placeholder="João da Silva" class="name-field">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Joaodasilva@algumacoisa.com" class="email-field">
+                <p>Your message</p>
+                <input type="text" name="message" class="message-field">
+                <br>
+                <button class="message-button">Send message</button>
+            </fieldset>
+        </form> 
+    </div>
+      
+    <div class="btn-conteiner">
+        <button class="btn-up">
+            <a href="#top">
+                <img src="/HTML/Simple-lading-page/img/arrow-up-circle-fill.svg" alt="">
+            </a>
+        </button>
+    </div>
+    
+</body>
+</html>
